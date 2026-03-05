@@ -6,7 +6,6 @@ credentials.json
 *.pfx
 *.key
 
-Templates/
 
 bin/
 obj/

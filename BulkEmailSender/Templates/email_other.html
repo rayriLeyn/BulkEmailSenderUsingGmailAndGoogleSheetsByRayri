@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" dir="auto" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Welcome Email</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+body { margin:0; padding:0; background-color:#ffffff; }
+table, td { border-collapse:collapse; }
+img { border:0; height:auto; line-height:100%; outline:none; text-decoration:none; }
+p { display:block; margin:13px 0; }
+</style>
+</head>
+
+<!--
+=================================================================
+  email_other.html — sent to recipients with any position OTHER than Member
+  (e.g. President, Secretary, Officer, Core Team, etc.)
+
+  PLACEHOLDER TOKENS (replaced automatically at send time):
+    {{name}}     → recipient's name        (Column B in Google Sheets)
+    {{email}}    → recipient's email       (Column A in Google Sheets)
+    {{position}} → recipient's position    (Column C in Google Sheets)
+
+  IMAGE URLS:
+  Replace each placeholder below with your GitHub raw URL.
+  Format: https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/assets/images/FILENAME
+
+    {{GITHUB_RAW_URL_BANNER_TOP}}    → top banner image     (recommended: 600px wide)
+    {{GITHUB_RAW_URL_BANNER_BOTTOM}} → bottom banner image  (recommended: 600px wide)
+
+  HOW TO GET YOUR GITHUB RAW URL:
+  1. Upload your image to assets/images/ in your GitHub repo
+  2. Click the image in GitHub → click the Raw button
+  3. Copy the URL from your browser address bar
+=================================================================
+-->
+
+<body style="background-color:#ffffff;">
+<div style="background-color:#ffffff;">
+
+  <!-- Outer border wrapper -->
+  <div style="max-width:600px; margin:0 auto; border:1px solid #e0e0e0; border-radius:4px; overflow:hidden;">
+
+    <!-- ── BANNER TOP ── -->
+    <div style="background:#ffffff; margin:0 auto; max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+        <tbody>
+          <tr>
+            <td style="padding:0; text-align:center;">
+              <!-- Replace {{GITHUB_RAW_URL_BANNER_TOP}} with your actual GitHub raw URL -->
+              <img alt="Welcome Banner"
+                src="{{GITHUB_RAW_URL_BANNER_TOP}}"
+                width="600"
+                style="display:block; width:100%; height:auto;">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── BODY COPY ── -->
+    <div style="background:#ffffff; margin:0 auto; max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+        <tbody>
+          <tr>
+            <td style="padding:32px;">
+
+              <!-- Greeting — {{name}} and {{position}} are replaced automatically -->
+              <p style="font-family:Arial,sans-serif; font-size:16px; line-height:1.8; color:#0a1526; margin:0 0 16px 0;">
+                Hi <strong>{{name}}</strong>, welcome to the team as our new <strong>{{position}}</strong>!
+              </p>
+
+              <!-- Main body — customize this section with your own content -->
+              <p style="font-family:Arial,sans-serif; font-size:16px; line-height:1.8; color:#0a1526; margin:0 0 16px 0;">
+                Replace this paragraph with your welcome message for non-member positions.
+                You can use <strong>{{name}}</strong> and <strong>{{position}}</strong> anywhere
+                in this template and they will be replaced with the recipient's actual data.
+              </p>
+
+              <!-- Example benefits list -->
+              <p style="font-family:Arial,sans-serif; font-size:16px; line-height:1.8; color:#0a1526; font-weight:bold; margin:0 0 8px 0;">
+                Your Benefits as {{position}}:
+              </p>
+              <ul style="font-family:Arial,sans-serif; font-size:16px; line-height:1.8; color:#0a1526; padding-left:22px; margin:0 0 16px 0;">
+                <li style="margin:0;"><strong>Benefit one:</strong> Description here.</li>
+                <li style="margin:0;"><strong>Benefit two:</strong> Description here.</li>
+                <li style="margin:0;"><strong>Benefit three:</strong> Description here.</li>
+              </ul>
+
+              <!-- ── SHARED SECTION — keep this in both templates ── -->
+              <p style="font-family:Arial,sans-serif; font-size:16px; line-height:1.8; color:#0a1526; margin:16px 0 0 0;">
+                <strong>Establish Your Connection! 📡❄️</strong><br>
+                Don't get left out in the cold — sync up with our official channels:
+              </p>
+              <ul style="font-family:Arial,sans-serif; font-size:16px; line-height:1.8; color:#0a1526; padding-left:22px; margin:8px 0;">
+                <li style="margin:0;"><strong>Facebook:</strong> <a href="YOUR_FACEBOOK_URL" style="color:#1481d8; text-decoration:none;">YOUR_FACEBOOK_URL</a></li>
+                <li style="margin:0;"><strong>Meetup:</strong> <a href="YOUR_MEETUP_URL" style="color:#1481d8; text-decoration:none;">YOUR_MEETUP_URL</a></li>
+              </ul>
+
+              <p style="font-family:Arial,sans-serif; font-size:16px; line-height:1.8; color:#0a1526; margin:16px 0 0 0;">
+                <strong>Community Communication Channels:</strong>
+              </p>
+              <ul style="font-family:Arial,sans-serif; font-size:16px; line-height:1.8; color:#0a1526; padding-left:22px; margin:8px 0;">
+                <li style="margin:0;"><strong>Group Chat:</strong> (link here)</li>
+                <li style="margin:0;"><strong>Discord:</strong> <a href="YOUR_DISCORD_URL" style="color:#1481d8; text-decoration:none;">YOUR_DISCORD_URL</a></li>
+              </ul>
+
+              <p style="font-family:Arial,sans-serif; font-size:16px; line-height:1.8; color:#0a1526; margin:16px 0 0 0;">
+                Before you log off — one more thing! 🚀 Share this milestone on your socials
+                and tag it with your club's official hashtags.
+              </p>
+              <!-- ── END SHARED SECTION ── -->
+
+              <!-- Closing line -->
+              <p style="font-family:Arial,sans-serif; font-size:16px; line-height:1.8; color:#0a1526; margin:16px 0 0 0;">
+                This is a closing line to wrap up your email. You can customize this with a call to action, a reminder of next steps, or just a friendly sign-off.
+              </p>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── FOOTER ── -->
+    <div style="background:#ffffff; margin:0 auto; max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+        <tbody>
+          <tr>
+            <td style="padding:0; text-align:center;">
+              <!-- Replace {{GITHUB_RAW_URL_BANNER_BOTTOM}} with your actual GitHub raw URL -->
+              <img alt="Footer Banner"
+                src="{{GITHUB_RAW_URL_BANNER_BOTTOM}}"
+                width="600"
+                style="display:block; width:100%; height:auto;">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
