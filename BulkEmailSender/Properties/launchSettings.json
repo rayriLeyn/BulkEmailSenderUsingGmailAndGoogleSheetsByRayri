@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BulkEmailSender": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
